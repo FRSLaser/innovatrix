@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innovatrix.her | Empowering Women in STEM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Innovatrix<span>.her</span></div>
+      <ul id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#testimonials">Stories</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="fade-in">Empowering Women in STEM</h1>
+      <p class="fade-in delay">Building bridges, breaking barriers, and inspiring the next generation of innovators.</p>
+      <a href="#about" class="btn fade-in delay2">Discover More</a>
+    </div>
+  </section>
+  <section id="about" class="about fade-section">
+    <h2>About Us</h2>
+    <p style="text-align:center">
+      At Innovatrix.her, we believe diversity fuels discovery.
+    </p>
+    <p style="text-align:center">
+      Our mission is to create opportunities, mentorship, and a global community for women to thrive in STEM.
+    </p>
+  </section>
+  <section id="programs" class="programs fade-section">
+    <h2>Our Programs</h2>
+    <div class="programs-grid">
+      <div class="card">
+        <h3>🌱 Mentorship</h3>
+        <p>Guidance from experienced STEM leaders to help women grow in their careers.</p>
+      </div>
+      <div class="card">
+        <h3>🛠️ Workshops</h3>
+        <p>Hands-on coding, robotics, and science projects with real-world applications.</p>
+      </div>
+      <div class="card">
+        <h3>🎓 Scholarships</h3>
+        <p>Financial support for talented women pursuing STEM education worldwide.</p>
+      </div>
+      <div class="card">
+        <h3>🌍 Community</h3>
+        <p>Hackathons, conferences, and networking events that spark collaboration.</p>
+      </div>
+    </div>
+  </section>
+  <section id="testimonials" class="testimonials fade-section">
+    <h2>Stories of Impact</h2>
+    <div class="carousel">
+      <div class="testimonial active">
+        <p>"Innovatrix.her gave me the courage to apply for a PhD in AI research."</p>
+        <div class="author">— Sara, AI Researcher</div>
+      </div>
+      <div class="testimonial active">
+        <p>"The workshops helped me land my first internship in robotics!"</p>
+        <div class="author">— Aisha, Engineering Student</div>
+      </div>
+      <div class="testimonial active">
+        <p>"Their mentorship program connected me with inspiring women leaders in STEM."</p>
+        <div class="author">— Fatima, Software Developer</div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact fade-section">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <footer>
+    <p>© 2025 Innovatrix.her | Empowering Women in STEM</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+<style>
+i {
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+  font-family : 'Segoe UI', Tahoma, sans-serif;
+}
+body {
+  background: #f7fdf9;
+  color: #1b4332;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+header {
+  background: linear-gradient(90deg, #1b4332, #2d6a4f);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;
+}
+nav .logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #d8f3dc;
+}
+nav .logo span {
+  color: #95d5b2;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+}
+nav ul li {
+  margin-left: 25px;
+}
+nav ul li a {
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #95d5b2;
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.hero {
+  height: 95vh;
+  background: linear-gradient(rgba(27,67,50,0.7), rgba(27,67,50,0.7)),
+    url('https://images.unsplash.com/photo-1521790797524-b2497295b8a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80')
+    no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 1rem;
+}
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  animation: fadeUp 1s ease-out;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  animation: fadeUp 1.5s ease-out;
+}
+.btn {
+  background: #2d6a4f;
+  color: white;
+  padding: 0.9rem 1.8rem;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+  animation: fadeUp 2s ease-out;
+}
+.btn:hover {
+  background: #52b788;
+}
+
+section {
+  padding: 4rem 1rem;
+  max-width: 1100px;
+  margin: auto;
+}
+section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2d6a4f;
+  font-size: 2rem;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.card h3 {
+  margin-bottom: 1rem;
+  color: #1b4332;
+}
+
+.carousel {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+  overflow: hidden;
+}
+.testimonial {
+  display: none;
+  text-align: center;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.testimonial.active {
+  display: block;
+  animation: fadeIn 1s ease-in-out;
+}
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.testimonial .author {
+  font-weight: bold;
+  color: #2d6a4f;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+.contact input, .contact textarea {
+  margin: 0.5rem 0;
+  padding: 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.contact button {
+  margin-top: 1rem;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 25px;
+  background: #2d6a4f;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact button:hover {
+  background: #40916c;
+}
+
+footer {
+  text-align: center;
+  padding: 1.2rem;
+  background: #1b4332;
+  color: white;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #1b4332;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 220px;
+    padding: 1rem;
+  }
+  nav ul.show {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+    color: white;
+  }
+}
+</style>
